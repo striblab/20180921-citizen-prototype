@@ -1,7 +1,6 @@
 // Header styles
-
 a:hover {
-  color:#036;
+  color: #036;
 }
 
 .elex-header {
@@ -14,14 +13,15 @@ a:hover {
   line-height: 1.1em;
 }
 
-.elex-header h5, .elex-header h5 span {
+.elex-header h5,
+.elex-header h5 span {
   text-transform: uppercase;
   font-size: .9em;
   letter-spacing: .08em;
   padding-top: 40px;
 }
 
-.elex-header h5 span{
+.elex-header h5 span {
   font-size: .96em;
   letter-spacing: .1em;
 }
@@ -36,57 +36,56 @@ a:hover {
 }
 
 .elex-main {
-  max-width:800px;
-  font-family:'Benton Sans';
+  max-width: 800px;
+  font-family: 'Benton Sans';
 }
 
 // Module styles
-
 #leadin {
   padding-top: 30px;
   margin-bottom: 60px;
   max-width: 525px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 
   p {
-    font-family:'Benton Sans';
-    font-size:0.9em;  
+    font-family: 'Benton Sans';
+    font-size: 0.9em;
   }
 }
 
 section {
   margin-bottom: 40px;
   max-width: 650px;
-  margin-left:auto;
-  margin-right:auto;
-  padding-bottom:40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
   border-bottom: 1px solid #dfdfdf;
 
   h2 {
     font-size: 1.4em;
-    text-align:center;
+    text-align: center;
     font-family: 'Benton Sans';
-    font-weight:bold;
-    margin-bottom:20px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
 
   p {
-    font-family:inherit;
+    font-family: inherit;
     font-size: 0.9em;
     padding-top: 5px;
   }
 
   ol {
-    margin-top:40px;
-    counter-reset:li;
+    margin-top: 40px;
+    counter-reset: li;
 
     li {
-      margin-left:10%;
-      margin-right:10%;
-      margin-top:40px;
-      list-style:none;
-      position:relative;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 40px;
+      list-style: none;
+      position: relative;
 
       &:before {
         --size: 35px;
@@ -94,12 +93,12 @@ section {
         width: var(--size);
         height: var(--size);
 
-        position:absolute;
+        position: absolute;
         left: calc(-1 * var(--size) - 15px);
-        top:-7px;
+        top: -7px;
 
-        content:counter(li);
-        counter-increment:li;
+        content: counter(li);
+        counter-increment: li;
         -webkit-border-radius: 999px;
         -moz-border-radius: 999px;
         border-radius: 999px;
@@ -108,7 +107,7 @@ section {
         background: white;
         text-align: center;
 
-        font-weight:bold;
+        font-weight: bold;
       }
 
       &.blue:before {
@@ -118,48 +117,53 @@ section {
       &.red:before {
         border: 2px solid #C0272D;
       }
-
     }
   }
 }
 
 #promos {
-    margin-top:20px;
-    display:inline-block;
-    width:100%;
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
 
-    .promo-row {
-      width:100%;
-      display:inline-block;
-      clear:both;
-      margin-bottom:40px;
+  .promo-row {
+    width: 100%; // display:inline-block;
+    clear: both;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content:space-between;
+    // align-content: flex-start;
 
-      .promo {
-        display:block;
-        width:45%;
+    .promo {
+      display: block;
 
-        &.left {
-          float:left;
-        }
-
-        &.right {
-          float:right;
-        }
-
-        h5 {
-          font: normal bold 1.5em "Whitman Display Condensed Bold",Georgia,Times,serif;
-          margin-bottom:5px;
-          color:#222;
-        }
-
-        p {
-          font: normal normal 0.75em "Poynter Serif RE",Georgia,Times,serif;
-          color:#333;
-        }
-
+      &.large-tease {
+        width: 100%;
+        .image {float:right; padding-left:1em;width:75%; margin-top:-2.3em;}
+        .promo-text {margin-top:1em;}
+       
       }
 
+      &.small-tease {
+        width: 30%;
+        text-align:center;
+        // p{text-align:left;}
+      }
+
+      h5 {
+        font: normal bold 1.5em "Whitman Display Condensed Bold", Georgia, Times, serif;
+        margin-bottom: 5px;
+        color: #222;
+      }
+
+      p {
+        font: normal normal 0.95em "Poynter Serif RE", Georgia, Times, serif;
+        color: #333;
+      }
     }
+  }
 }
 
 footer {
