@@ -121,6 +121,40 @@ section {
   }
 }
 
+ul {
+  margin-top: 40px;
+  counter-reset: li;
+  margin-bottom:80px;
+
+  li.promo {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    list-style: none;
+    position: relative;
+    .image {
+      float: left;
+      width: 35px;
+      margin-top: 0;
+      margin-left:-50px;
+    }
+    .promo-text {
+     
+       h5 {
+        font: normal bold 1.5em "Whitman Display Condensed Bold", Georgia, Times, serif;
+        margin-bottom: 0px;
+        color: #222;
+        padding-top:5px;
+      }
+
+      // p {
+      //   font: normal normal 0.95em "Poynter Serif RE", Georgia, Times, serif;
+      //   color: #333;
+      // }
+    }
+  }
+}
+
 #promos {
   margin-top: 20px;
   display: inline-block;
@@ -133,23 +167,26 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content:space-between;
-    // align-content: flex-start;
-
+    justify-content: space-between; // align-content: flex-start;
     .promo {
       display: block;
 
       &.large-tease {
         width: 100%;
-        .image {float:right; padding-left:1em;width:75%; margin-top:-2.3em;}
-        .promo-text {margin-top:1em;}
-       
+        .image {
+          float: right;
+          padding-left: 1em;
+          width: 75%;
+          margin-top: -2.3em;
+        }
+        .promo-text {
+          margin-top: 1em;
+        }
       }
 
       &.small-tease {
         width: 30%;
-        text-align:center;
-        // p{text-align:left;}
+        text-align: center; // p{text-align:left;}
       }
 
       h5 {
