@@ -44,7 +44,7 @@ a:hover {
 #leadin {
   padding-top: 30px;
   margin-bottom: 60px;
-  max-width: 525px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 
@@ -62,6 +62,7 @@ section {
   padding-bottom: 40px;
   border-bottom: 1px solid #dfdfdf;
 
+
   h2 {
     font-size: 1.4em;
     text-align: center;
@@ -77,12 +78,13 @@ section {
   }
 
   ol {
-    margin-top: 40px;
+    // margin-top: 40px;
+    margin: 40px 0 0 0;
     counter-reset: li;
-
+    font-size: .9em;
     li {
-      margin-left: 10%;
-      margin-right: 10%;
+      margin-left: 8%;
+      margin-right: 8%;
       margin-top: 40px;
       list-style: none;
       position: relative;
@@ -111,49 +113,19 @@ section {
       }
 
       &.blue:before {
-        border: 2px solid #0258A0;
+        border: 2px solid #333333;
+        color: #333333;
       }
 
       &.red:before {
-        border: 2px solid #C0272D;
+        border: 2px solid #333333;
+        color: #333333;
       }
     }
   }
 }
 
-ul {
-  margin-top: 40px;
-  counter-reset: li;
-  margin-bottom:80px;
 
-  li.promo {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 40px;
-    list-style: none;
-    position: relative;
-    .image {
-      float: left;
-      width: 35px;
-      margin-top: 0;
-      margin-left:-50px;
-    }
-    .promo-text {
-     
-       h5 {
-        font: normal bold 1.5em "Whitman Display Condensed Bold", Georgia, Times, serif;
-        margin-bottom: 0px;
-        color: #222;
-        padding-top:5px;
-      }
-
-      // p {
-      //   font: normal normal 0.95em "Poynter Serif RE", Georgia, Times, serif;
-      //   color: #333;
-      // }
-    }
-  }
-}
 
 #promos {
   margin-top: 20px;
@@ -161,44 +133,42 @@ ul {
   width: 100%;
 
   .promo-row {
-    width: 100%; // display:inline-block;
+    width: 100%;
     clear: both;
     margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: space-between; // align-content: flex-start;
+    justify-content: space-between;
     .promo {
       display: block;
 
       &.large-tease {
         width: 100%;
+        text-align: center;
         .image {
-          float: right;
-          padding-left: 1em;
-          width: 75%;
-          margin-top: -2.3em;
+          width: 545px;
+          margin: -2.3em auto -2em auto;
         }
         .promo-text {
-          margin-top: 1em;
+          text-align: left;
         }
       }
 
       &.small-tease {
         width: 30%;
-        text-align: center; // p{text-align:left;}
+        text-align: center;
+        text-align: left;
+        margin-top: 2em;
       }
-
-      h5 {
-        font: normal bold 1.5em "Whitman Display Condensed Bold", Georgia, Times, serif;
-        margin-bottom: 5px;
-        color: #222;
-      }
-
-      p {
-        font: normal normal 0.95em "Poynter Serif RE", Georgia, Times, serif;
-        color: #333;
-      }
+    }
+    a,
+    a:visited {
+      color: #0a0203;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #036
     }
   }
 }
