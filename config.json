@@ -4,8 +4,18 @@
   "projectIdentifier": "20180921-citizen-prototype",
 
   "data": {
+    "archie": "./sources/archie.json",
     "content": "./content.json",
     "pkg": "./package.json"
+  },
+
+  "archie": {
+    "googleDocId": "1Uvsu3aCxj2B_mZuVKLOUvX_rJwkwZsBH3-92xcu7Iso",
+    "googleClientId": "971188644461-jiumgc01ma8q5qhhr17ecdaesn1dtev5.apps.googleusercontent.com",
+    "googleClientSecret": "gQa2asnhSoIY7B5c0duLKsT9",
+    "redirectPort": "6006",
+    "exportPath": "./sources/archie.json",
+    "tokenPath": "./archie-token.json"
   },
 
   "cms": {
