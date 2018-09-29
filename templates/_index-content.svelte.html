@@ -14,6 +14,7 @@
       <ol>
         {#each archie.towatch as w}
         <li class="blue"><strong>{w.Heading}</strong>: {@html w.Text}</li>
+        {/each}
       </ol>
     </section>
     <section id="do">
@@ -21,6 +22,7 @@
       <ol>
         {#each archie.todo as d}
         <li class="blue"><strong>{d.Heading}</strong>: {@html d.Text}</li>
+        {/each}
       </ol>
     </section>
     <section id="resources" style="border-bottom:none;margin-bottom:0px;">
