@@ -60,6 +60,8 @@ section {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
+  padding-left:20px;
+  padding-right:20px;
   border-bottom: 1px solid #dfdfdf;
 
 
@@ -78,7 +80,6 @@ section {
   }
 
   ol {
-    // margin-top: 40px;
     margin: 40px 0 0 0;
     counter-reset: li;
     font-size: .9em;
@@ -92,11 +93,11 @@ section {
       &:before {
         --size: 35px;
 
-        width: var(--size);
-        height: var(--size);
+        width: 35px;
+        height: 35px;
 
         position: absolute;
-        left: calc(-1 * var(--size) - 15px);
+        left: -50px;
         top: -7px;
 
         content: counter(li);
@@ -104,7 +105,7 @@ section {
         -webkit-border-radius: 999px;
         -moz-border-radius: 999px;
         border-radius: 999px;
-        line-height: var(--size);
+        line-height: 33px;
 
         background: white;
         text-align: center;
@@ -147,8 +148,8 @@ section {
         width: 100%;
         text-align: center;
         .image {
-          width: 545px;
-          margin: -2.3em auto -2em auto;
+          max-width: 545px;
+          margin: -2.3em auto -1.8em auto;
         }
         .promo-text {
           text-align: left;
