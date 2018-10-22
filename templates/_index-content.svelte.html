@@ -29,6 +29,14 @@
         {/each}
       </ol>
     </section>
+    <section id="archives">
+      <h2>{archie.Archive_heading}</h2>
+      <ol>
+        {#each archie.archive as a}
+        <li class="blue"><strong>{a.Heading}</strong>: {@html a.Text}</li>
+        {/each}
+      </ol>
+    </section>
     <section id="resources" style="border-bottom:none;margin-bottom:0px;">
       <h2>Resources</h2>
       <p>Our journalists have been hard at work this election season creating tools and resources to help you make your decision in November. Check them out here:</p>
