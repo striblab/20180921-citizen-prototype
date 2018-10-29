@@ -31,6 +31,7 @@
     </section>
     <section id="archives">
       <h2>{archie.Archive_heading}</h2>
+      <p>{@html archie.Archive_leadin}</p>
       <ol>
         {#each archie.archive as a}
         <li class="blue"><strong>{a.Heading}</strong>: {@html a.Text}</li>
